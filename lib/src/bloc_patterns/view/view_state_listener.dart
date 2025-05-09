@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_starter_kit/src/common/view/view_state.dart';
+import 'package:flutter_starter_kit/src/bloc_patterns/view/view_state.dart';
 
 typedef LoadingCallback = void Function(BuildContext context);
 typedef DataCallback<T> = void Function(BuildContext context, T value);
