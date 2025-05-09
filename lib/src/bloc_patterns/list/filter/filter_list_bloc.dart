@@ -17,6 +17,8 @@ class FilterListBloc<T, F> extends Bloc<BaseListEvents<F>, ViewState<List<T>>> {
     on<RefreshList<F>>(_refreshList);
   }
 
+  void loadItems({F? filter}) => add(LoadList(filter));
+
   void refreshItems({F? filter}) => add(RefreshList(filter));
 
   Future<void> _loadList(
